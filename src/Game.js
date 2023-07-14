@@ -35,6 +35,7 @@ export default function Game(props) {
   ///////// NEW STUFF ADDED STATE HOOK
   const [emoji, setEmoji] = useState(null);
   const images = { rock:rock, scissor:victory,paper:paper };
+  const [play,setPlay]=useState([]);
   
   ///////// NEW STUFF ADDED STATE HOOK
   
@@ -78,11 +79,16 @@ export default function Game(props) {
 
     function onReady(value) {
       console.log(value);
+      let curr=0
       for(let i=0;i<value.length;i++){
         if(value[i].player==props.socket.id){
+          curr=i
           setScore(value[i].score);
         }
       }
+      let a=[value[curr].play,value[curr^1].play]
+      setPlay(a);
+      
       startTimer();
     }
     function onEvent(value) {
@@ -191,6 +197,7 @@ export default function Game(props) {
       
        <p>You are in room {props.room}</p>
        <p>Current Score :{score}</p>
+       <p>Your last Move:{play[0]} Opponent last move: {play[1]}</p>
        </div>
       <header className="App-header">
         <Webcam
