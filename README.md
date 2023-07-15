@@ -1,9 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## Deployed
+Project is deployed on render [Click Here](https://rockpaper-multiplayer.onrender.com/)
 ## Available Scripts
 
 In the project directory, you can run:
+### "Start Server"
+[Server Code] (https://github.com/palash018/Game_backend) 
+Server code should be fetched first and server should be run first by running app.js script.
+### "Socket.js Change"
+Change url of server to server URL in socket.js
 
+### DOC BELOW IS DEFAULT REACT DOC
 ### `yarn start`
 
 Runs the app in the development mode.<br />
