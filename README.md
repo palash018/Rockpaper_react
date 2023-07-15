@@ -1,11 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Deployed
 Project is deployed on render [Click Here](https://rockpaper-multiplayer.onrender.com/)
+## About
+This is a Multiplayer Rockpaper game camera based it uses tensorflow to detect hands and estimate poses and multiplayer socket conenction is handeled via socketio backend server is in [another repo](https://github.com/palash018/Game_backend)
 ## Available Scripts
 
 In the project directory, you can run:
 ### "Start Server"
-[Server Code] (https://github.com/palash018/Game_backend) 
+[Server Code](https://github.com/palash018/Game_backend) 
 Server code should be fetched first and server should be run first by running app.js script.
 ### "Socket.js Change"
 Change url of server to server URL in socket.js
